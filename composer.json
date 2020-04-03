@@ -1,5 +1,5 @@
 {
-    "name": "vipparcel/client",
+    "name": "stoyanov-sv/vipparcel",
     "description": "VIPparcel Client PHP",
     "require": {
         "guzzle/guzzle": "~3.9"
@@ -7,7 +7,7 @@
     "autoload": {
         "classmap": ["VP"]
     },
-    "license": "GNU GENERAL PUBLIC LICENSE",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "VIPparcel",
@@ -16,6 +16,10 @@
         {
             "name": "Invision",
             "email": "invision70@gmail.com"
+        },
+        {
+            "name": "Sergey Stoyanov",
+            "email": "stoyanov.serg@gmail.com"
         }
     ]
 }
