@@ -5,7 +5,9 @@
         "guzzle/guzzle": "~3.9"
     },
     "autoload": {
-        "classmap": ["VP"]
+        "psr-4": {
+            "stoyanov\\vipparcel\\": "src"
+        }
     },
     "license": "Apache-2.0",
     "authors": [
