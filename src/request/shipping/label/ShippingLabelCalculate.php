@@ -3,6 +3,7 @@
 namespace stoyanov\vipparcel\request\shipping\label;
 
 use stoyanov\vipparcel\request\VipparcelRequest;
+use stoyanov\vipparcel\VipparcelException;
 
 class ShippingLabelCalculate extends VipparcelRequest
 {
@@ -10,7 +11,7 @@ class ShippingLabelCalculate extends VipparcelRequest
     public function is_international()
     {
         if (empty($this->_params['mailClass'])) {
-            throw new VP_Exception('Required parameter not passed: mailClass');
+            throw new VipparcelException('Required parameter not passed: mailClass');
         }
         return (strpos($this->_params['mailClass'], 'International') !== FALSE);
     }

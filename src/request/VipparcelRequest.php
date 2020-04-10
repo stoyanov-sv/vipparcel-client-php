@@ -2,6 +2,8 @@
 
 namespace stoyanov\vipparcel\request;
 
+use stoyanov\vipparcel\VipparcelException;
+
 abstract class VipparcelRequest {
 
     const METHOD_POST = 'post';
@@ -28,7 +30,7 @@ abstract class VipparcelRequest {
         $info_params = $this->info_params();
         foreach ($this->_params as $key => $value) {
             if ( ! in_array($key, $info_params)) {
-                throw new VP_Exception('Unknown parameter "'.$key.'" for '.get_called_class());
+                throw new VipparcelException('Unknown parameter "'.$key.'" for '.get_called_class());
             }
         }
 

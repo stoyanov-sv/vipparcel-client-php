@@ -61,6 +61,10 @@ class ShippingLabelPrint extends VipparcelRequest
             'dimensionalWeight',
             'labelType',
             'imageFormat',
+            'reference',
+            'rubberStamp1',
+            'rubberStamp2',
+            'rubberStamp3',
         );
 
         return ($this->is_international() ? $international : $domestic);
